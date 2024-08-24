@@ -1,0 +1,173 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  cursive;
+}
+.hero
+{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(hero.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+nav
+{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+.logo
+{
+    width: 40px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a 
+{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+.Login
+{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 600;
+}
+.Button
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #333;
+    background: linear-gradient(45deg, #a5a59f,rgba(31, 198, 198, 0.2) );
+    font-size: 14px;
+    border-radius: 30px;
+    font-weight: 500;
+    border-top-right-radius: 0;
+    transition: .5s ease-in-out;
+}
+.content
+{
+    margin-top: 10%;
+    max-height: 600px;
+    width: 600px;
+}
+.content h2
+{
+    font-size: 30px;
+    color: #222;
+}
+.content p{
+    margin: 10px 0 30px;
+    animation-delay: 0.5s;
+}
+.content .Button{
+    font-size: 18px;
+    animation-delay: 1s;
+}
+.Button:hover
+{
+    border-top-right-radius: 30px;
+    border: 2px dashed rgba(31, 198, 198, 0.2);
+    font-weight: 700;
+}
+.feature
+{
+    bottom: 0;
+    right: -9%;
+    width: 830px;
+    position: absolute;
+}
+.feature.animation
+{
+    animation-delay: 1.5s;
+}
+.animation
+{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup
+{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 768px)
+{
+    nav{
+        width: 80%;
+        height: fit-content;
+    }
+    nav ul li{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .content
+    {
+        width: 300px;
+    }
+    .Login {
+        font-size: 12px;
+       
+    }
+    .Button {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+    .feature
+    {
+        width: 600px;
+        position: absolute;
+        bottom: 0;
+        right: -9%;
+    }
+}
+@media (max-width: 480px)
+{
+    nav{
+        width: 30px;
+        height: fit-content;
+        
+    }
+    nav ul li{
+        display: flex;
+    
+    }
+    .content
+    {
+        width: 300px;
+        
+    }
+    
+    .feature{
+        display: none;
+    }
+
+    .Login {
+        font-size: 12px;
+       
+    }
+    .Button
+     {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+} 
